@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECAT - Educational Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to ECAT</h1>
+        <p>Transforming Lives, One Coaching Session at a Time. Your Success Story Starts Here.</p>
+    </header>
+
+    <!-- Left Side - Student Login -->
+    <div id="student-login" class="login-panel">
+        <h2>Student Login</h2>
+        <div class="login-form">
+            <input type="password" id="student-password" placeholder="Enter Password">
+            <button class="btn" onclick="studentLogin()">Login</button>
+        </div>
+    </div>
+
+    <!-- Right Side - Admin Login -->
+    <div id="admin-login" class="login-panel">
+        <h2>Admin Login</h2>
+        <div class="login-form">
+            <input type="password" id="admin-password" placeholder="Enter Admin Password">
+            <button class="btn" onclick="adminLogin()">Login</button>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel">
+        <h2>Admin Panel</h2>
+        <div class="admin-form">
+            <h3>Change Student Password</h3>
+            <input type="password" id="new-password" placeholder="Enter New Password">
+            <button class="btn" onclick="changePassword()">Change Password</button>
+            <h3>Update YouTube Video Link</h3>
+            <input type="text" id="youtube-link" placeholder="Enter YouTube Video ID">
+            <button class="btn" onclick="updateYoutubeLink()">Update Video</button>
+            <h3>Update Google Meet Link</h3>
+            <input type="text" id="meet-link" placeholder="Enter Google Meet Link">
+            <button class="btn" onclick="updateMeetLink()">Update Meet Link</button>
+        </div>
+    </div>
+
+    <!-- Videos Section -->
+    <div id="video-section" class="container">
+        <h2>Videos</h2>
+        <div class="thumbnail" id="video-thumbnail">
+            <img src="https://via.placeholder.com/300" alt="Video Thumbnail" id="video-thumb" onclick="playVideo()">
+            <p>Click to Play</p>
+        </div>
+    </div>
+
+    <!-- Google Meet Link Section -->
+    <div id="meet-link-section" class="container">
+        <h2>Join Google Meet</h2>
+        <button class="btn" id="meet-link-btn" onclick="joinMeet()">Join Now</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JS -->
+</body>
+</html>
